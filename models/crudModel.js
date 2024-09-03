@@ -1,20 +1,20 @@
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
-  name: {
+  title: {
     type: String,
     required: true,
   },
-  email: {
+  year: {
     type: String,
     required: true,
   },
-  age: {
+  poster: {
     type: String,
     required: true,
   },
 });
 
-const User = mongoose.model("Movie", userSchema);
+const User = mongoose.model("movie", userSchema);
 
 module.exports = User;
